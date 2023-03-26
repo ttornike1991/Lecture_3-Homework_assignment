@@ -4,7 +4,7 @@ Instructions
 Task 1
 
 You are given a figma mockup. Your task is to implement the responsive layout. The site layout should change according to the browser viewport / screen size.  The aim of this task is to get you working with responsive web design with a practical task and to use media queries.
-Figma:[Figma](https://www.figma.com/file/4orBAVPhfnWs3p4ZqGMXl2/Dashboard-responsive-layout?node-id=0%3A1&t=0FYl8EFZwEu7vUWh-0)
+[Figma_Link](https://www.figma.com/file/4orBAVPhfnWs3p4ZqGMXl2/Dashboard-responsive-layout?node-id=0%3A1&t=0FYl8EFZwEu7vUWh-0)
 
 You can get 4 points as maximum for this task
 Сriteria for assessment:
@@ -28,9 +28,9 @@ You can get 4 points as maximum for this task
 
 Task 2                      
 
-[codepen](https://codepen.io/varvara_ing1/pen/dyqvKQP)
+[Codepen_Link](https://codepen.io/varvara_ing1/pen/dyqvKQP)
 You need to add animation to the hands on the clock to get the following result:
 
-[file](/files/4029099/clock_moving(2).gif)
+[Image Example](/files/4029099/clock_moving(2).gif)
 You can get 1 point as maximum for this task.
 Сriteria for assessment: the animation looks exactly the same as in the reference.
