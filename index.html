@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Clonify</title>
+  </head>
+  <body>
+    <div class="container displayFlex">
+      <sidebar class="sidebar-container">
+        <div class="sidebar relative displayFlex flexColumn">
+          <div class="sidebar-logo">
+            <div>
+              <img src="./assets/img/Logo.png" alt="Icon" />
+            </div>
+            <div><img src="./assets/img/D A S H B O A R D.png" alt="Icon" /></div>
+          </div>
+          <div class="sidebar-dashboard">
+            <ul class="sidebar-dashboard-list">
+              <li class="sidebar-icon-dashboard"><span>Dashboard</span></li>
+              <li class="sidebar-icon-analytics"><span>Analytics</span></li>
+              <li class="sidebar-icon-finance"><span>Finance</span></li>
+              <li class="sidebar-icon-job-board"><span>Job Board</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-pages">
+            <img src="./assets/img/P A G E S.png" alt="PAGES-TEXT" />
+            <ul class="sidebar-dashboard-list">
+              <li class="sidebar-icon-support"><span>Dashboard</span></li>
+              <li class="sidebar-icon-folder"><span>Analytics</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-options displayFlex">
+            <img src="./assets/img/Settings.png" alt="option" />
+            <img src="./assets/img/logout.png" alt="logOut" />
+            <img src="./assets/img/globe.png" alt="Global" />
+          </div>
+        </div>
+      </sidebar>
+      <div class="right-content displayFlex flexColumn">
+        <header class="header displayFlex">
+          <input type="text" class="search-input" />
+          <div class="header-widget displayFlex">
+            <div class="header-icon-container">
+              <img src="./assets/img/Icon Indicator.png" alt="bell" />
+              <img src="./assets/img/calendar.png" alt="calendar" />
+              <img src="./assets/img/layout-grid-top-left.png" alt="grid" />
+            </div>
+            <div class="header-profile-container">
+              <img src="./assets/img/Avatar.png" alt="profile-pic" />
+            </div>
+          </div>
+        </header>
+        <cards class="card-container displayFlex">
+          <div class="card_content_left">
+            <h2 class="card_title">Unlock premium stats</h2>
+            <p class="card_text">Get up to 10TB of storage for a limited time</p>
+          </div>
+          <div class="card_content_right">
+            <img
+              src="./assets/img/Button.png"
+              alt="button-icon"
+              class="card_button_icon"
+            />
+          </div>
+        </cards>
+        <chart class="chart-container displayFlex">
+          <div class="chart1 displayFlex">
+            <div class="chart1_container">
+              <div class="chart1_upper_content">
+                <h3 class="chart1_title">Revenue</h3>
+                <span class="chart1_item_cost">$56,945</span>
+              </div>
+              <div class="chart1_lower_content">
+                <div class="chart1_green_percentage_container">
+                  <span class="chart1_green_percentage">+45%</span>
+                </div>
+
+                <span class="chart1_from_percent">From 4,6%</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart2">
+            <div class="chart2_content">
+              <div class="chart2_upper_content">
+                <h3 class="chart2_title">User</h3>
+                <span class="chart2_percentage">76.8%</span>
+              </div>
+              <div class="chart2_lower_content">
+                <div class="chart2_badge_container">
+                  <span class="chart2_badge">-1.7%</span>
+                </div>
+
+                <span class="chart2_from">From 4,6%</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart3">
+            <div class="chart3_content">
+              <div class="chart3_upper_content">
+                <h3 class="chart3_title">New Signups</h3>
+                <span class="chart3_info">116</span>
+              </div>
+              <div class="chart3_lower_content">
+                <div class="chart3_badge_container">
+                  <span class="chart3_badge">0.00</span>
+                </div>
+
+                <span class="chart3_from"> </span>
+              </div>
+            </div>
+          </div>
+          <div class="chart4">
+            <div class="chart4_content">
+              <div class="chart4_upper_content">
+                <h3 class="chart4_title">Retention</h3>
+                <span class="chart4_percentage">12.67%</span>
+              </div>
+              <div class="chart4_lower_content">
+                <div class="chart4_badge_container">
+                  <span class="chart4_badge">+0.6%</span>
+                </div>
+                <span class="chart4_from"></span>
+              </div>
+            </div>
+          </div>
+        </chart>
+        <Performance class="performance-container">
+
+        </Performance>
+      </div>
+    </div>
+  </body>
+</html>

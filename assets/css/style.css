@@ -1,0 +1,1060 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.displayFlex {
+  display: flex;
+}
+.flexColumn {
+  flex-direction: column;
+}
+body,
+html {
+  background-color: #f2f4f7;
+}
+.container {
+  background-color: #f2f4f7;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-container {
+  width: 14rem;
+  height: 100%;
+}
+.sidebar {
+  width: 100%;
+  height: 64rem;
+  background-color: #ffffff;
+  border-right: 1px solid #eaecf0;
+}
+
+.sidebar-logo div:first-of-type {
+  padding: 2rem 0 0 20px;
+}
+
+.sidebar-logo div:last-of-type {
+  padding: 2rem 0 0 20px;
+}
+.sidebar-dashboard-list {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 22px;
+
+  color: #282828;
+  padding: 22px;
+}
+
+.sidebar-dashboard-list li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+.sidebar-dashboard-list li span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-dashboard-list li span:before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.sidebar-dashboard-list li span:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-icon-dashboard span:before {
+  background-image: url("../img/dashboard-vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-dashboard span::after {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-icon-analytics span:before {
+  background-image: url("../img/email.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-analytics span::after {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-icon-finance span:before {
+  background-image: url("../img/Elements/Icon/user.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-finance span::after {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-icon-job-board span:before {
+  background-image: url("../img/layout-grid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-job-board span::after {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-support span:before {
+  background-image: url("../img/Support.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-support span::after {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-folder span:before {
+  background-image: url("../img/Folder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar-icon-folder span::after {
+  background-image: url("../img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar-pages img {
+  padding-top: 2rem;
+  padding-left: 20px;
+}
+.sidebar-options {
+  justify-content: space-evenly;
+
+  margin-top: auto;
+  padding-bottom: 0.75rem;
+}
+.right-content {
+  width: 100%;
+}
+.header {
+  justify-content: space-between;
+  width: 100%;
+  height: 4.125rem;
+  border-bottom: 1px solid #eaecf0;
+  background: #ffffff;
+  align-items: center;
+}
+.search-input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #9d9fa2;
+  border: 1px solid #eaecf0;
+  margin: 0.625rem 2rem 0.625rem 2rem;
+  width: 70%;
+  height: 2.875rem;
+  border-radius: 6px;
+  background: #ffffff;
+
+  padding-left: 40px;
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+}
+.search-input::placeholder {
+  padding: 0.625rem 1rem 0.625rem 1rem;
+}
+.header-widget {
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.header-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 0.675rem;
+}
+
+.header-profile-container {
+  margin-left: 0.675rem;
+}
+.card-container {
+  height: 8rem;
+  margin: 2rem;
+  background-color: #282828;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.125rem;
+  padding-right: 2.125rem;
+}
+.card_text {
+  width: 286px;
+  height: 22px;
+
+  /* Text/14px/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  color: #ffffff;
+}
+.card_title {
+  width: 284px;
+  height: 34px;
+
+  /* Heading/06 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height, or 121% */
+
+  letter-spacing: -0.6px;
+
+  color: #ffffff;
+}
+
+.card_button_icon:hover {
+  cursor: pointer;
+}
+.chart-container {
+  justify-content: space-evenly;
+  margin: 2rem;
+  height: 162px;
+  align-items: flex-start;
+  gap: 32px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 8px;
+
+  width: 262px;
+  height: 162px;
+
+  background: #ffffff;
+  /* Shadow/01 */
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.chart2 {
+  /* Type=Metric. Style=Style 6 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 8px;
+
+  width: 262px;
+  height: 162px;
+
+  background: #ffffff;
+  /* Shadow/01 */
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+.chart3 {
+  /* Type=Metric. Style=Style 7 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 8px;
+
+  width: 262px;
+  height: 162px;
+
+  background: #ffffff;
+  /* Shadow/01 */
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+}
+.chart4 {
+  /* Type=Metric. Style=Style 8 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 8px;
+
+  width: 262px;
+  height: 162px;
+
+  background: #ffffff;
+  /* Shadow/01 */
+
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 1;
+}
+.chart1_container {
+  /* Content */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 222px;
+  height: 122px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart1_upper_content {
+  /* Header */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 222px;
+  height: 66px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart1_lower_content {
+  /* Info */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 222px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart1_title {
+  /* Revenue */
+
+  width: 222px;
+  height: 26px;
+
+  /* Text/16px/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #5f6980;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart1_item_cost {
+  /* $56,945 */
+
+  width: 222px;
+  height: 40px;
+
+  /* Text/26px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  /* identical to box height, or 154% */
+
+  color: #282828;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart1_green_percentage_container {
+  /* Badge */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  gap: 10px;
+
+  width: 54px;
+  height: 24px;
+
+  background: #dcfff5;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chart1_green_percentage_container {
+  /* Hello */
+
+  width: 34px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-align: center;
+
+  color: #20c997;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.chart1_from_percent {
+  /* From 4.6% */
+
+  width: 160px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  color: #9d9fa2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+.chart2_content {
+  /* Content */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 222px;
+  height: 122px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart2_upper_content {
+  /* Header */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 222px;
+  height: 66px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart2_title {
+  /* Users */
+
+  width: 222px;
+  height: 26px;
+
+  /* Text/16px/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #5f6980;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart2_percentage {
+  /* 76.8% */
+
+  width: 222px;
+  height: 40px;
+
+  /* Text/26px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  /* identical to box height, or 154% */
+
+  color: #282828;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart2_lower_content {
+  /* Info */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 222px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart2_badge_container {
+  /* Badge */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  gap: 10px;
+
+  width: 52px;
+  height: 24px;
+
+  background: #ffe0e3;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.chart2_badge {
+  /* Hello */
+
+  width: 32px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-align: center;
+
+  color: #dc3545;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.chart2_from {
+  /* From 4.6% */
+
+  width: 162px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  color: #9d9fa2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.chart3_content {
+  /* Content */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 222px;
+  height: 122px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart3_upper_content {
+  /* Header */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 222px;
+  height: 66px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart3_title {
+  /* New Signups */
+
+  width: 222px;
+  height: 26px;
+
+  /* Text/16px/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #5f6980;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart3_info {
+  /* 116 */
+
+  width: 222px;
+  height: 40px;
+
+  /* Text/26px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  /* identical to box height, or 154% */
+
+  color: #282828;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.chart3_badge_container {
+  /* Badge */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  gap: 10px;
+
+  width: 47px;
+  height: 24px;
+
+  background: #f2f4f7;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.chart3_badge {
+  /* Hello */
+
+  width: 27px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-align: center;
+
+  color: #5f6980;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.chart4_content {
+  /* Content */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 222px;
+  height: 122px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.chart4_upper_content {
+  /* Header */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 222px;
+  height: 66px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart4_title {
+  /* Retention */
+
+  width: 222px;
+  height: 26px;
+
+  /* Text/16px/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #5f6980;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart4_percentage {
+  /* 12.67% */
+
+  width: 222px;
+  height: 40px;
+
+  /* Text/26px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  /* identical to box height, or 154% */
+
+  color: #282828;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.chart4_lower_content {
+  /* Info */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 222px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.chart4_badge_container {
+  /* Badge */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  gap: 10px;
+
+  width: 57px;
+  height: 24px;
+
+  background: #dcfff5;
+  border-radius: 100px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.chart4_badge {
+  /* Hello */
+
+  width: 37px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-align: center;
+
+  color: #20c997;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.chart4_from {
+  /* From 4.6% */
+
+  width: 157px;
+  height: 20px;
+
+  /* Text/12px/Semibold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  color: #9d9fa2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.performance-container {
+}
